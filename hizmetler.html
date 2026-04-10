@@ -1,21 +1,21 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="tr" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hizmetlerimiz | Sokrat Akademik Danışmanlık</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Outfit', sans-serif; background-color: #ffffff; color: #1e293b; }
         .bg-navy-dark { background-color: #0f172a; }
         .text-emerald { color: #059669; }
         .bg-emerald { background-color: #059669; }
-        .hero-mini { background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); padding: 100px 0; }
-        .service-card { background: #ffffff; border: 1px solid #f1f5f9; box-shadow: 0 10px 30px rgba(0,0,0,0.05); transition: all 0.3s ease; }
+        .hero-gradient { background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); }
         .nav-link { position: relative; }
         .nav-link::after { content: ''; position: absolute; width: 0; height: 2px; bottom: -4px; left: 0; background-color: #059669; transition: width 0.3s; }
         .nav-link:hover::after { width: 100%; }
+        .service-card { background: #ffffff; border: 1px solid #f1f5f9; box-shadow: 0 10px 30px rgba(0,0,0,0.05); transition: all 0.3s ease; }
     </style>
 </head>
 <body class="antialiased">
@@ -26,60 +26,18 @@
         </a>
         <div class="hidden md:flex items-center space-x-10 text-sm font-semibold text-slate-600 uppercase tracking-widest">
             <a href="index.html" class="nav-link hover:text-emerald transition">Ana Sayfa</a>
-            <a href="hizmetler.html" class="text-emerald border-b-2 border-emerald pb-1 transition font-bold">Hizmetlerimiz</a>
+            <a href="hizmetler.html" class="text-emerald font-bold border-b-2 border-emerald pb-1 transition">Hizmetlerimiz</a>
             <a href="blog.html" class="nav-link hover:text-emerald transition">Akademik Rehber</a>
+            <a href="https://wa.me/905XXXXXXXXX" class="bg-emerald text-white px-7 py-3 rounded-lg hover:bg-emerald/90 transition shadow-lg shadow-emerald/20 uppercase tracking-widest text-xs font-bold">
+                Ücretsiz Ön Görüşme
+            </a>
         </div>
     </nav>
 
-    <header class="hero-mini text-white text-center px-8">
-        <h1 class="text-4xl md:text-5xl font-extrabold mb-4 tracking-tighter uppercase">Hizmet Kapsamımız</h1>
+    <header class="hero-gradient py-24 px-8 text-white text-center">
+        <h1 class="text-4xl md:text-5xl font-extrabold mb-4 tracking-tighter uppercase italic">Hizmet Kapsamımız</h1>
         <p class="text-slate-400 font-light max-w-2xl mx-auto">Tüm akademik branşlarda profesyonel rehberlik hizmetlerimizin detayları.</p>
     </header>
-
-    <section class="py-24 px-8 bg-slate-50/50">
-        <div class="max-w-6xl mx-auto grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div class="service-card p-8 rounded-3xl">
-                <div class="text-2xl mb-4 text-emerald font-bold italic">🎓</div>
-                <h4 class="font-bold text-navy-dark mb-2">Akademik Hizmetler</h4>
-                <p class="text-xs text-slate-500 italic">Sürecin profesyonel yapılandırılması.</p>
-            </div>
-            <div class="service-card p-8 rounded-3xl">
-                <div class="text-2xl mb-4 text-emerald font-bold italic">👍</div>
-                <h4 class="font-bold text-navy-dark mb-2">Konu Seçimi</h4>
-                <p class="text-xs text-slate-500 italic">Doğru konu ve kaynak tespiti.</p>
-            </div>
-            <div class="service-card p-8 rounded-3xl">
-                <div class="text-2xl mb-4 text-emerald font-bold italic">📖</div>
-                <h4 class="font-bold text-navy-dark mb-2">Makale Yazımı</h4>
-                <p class="text-xs text-slate-500 italic">Uluslararası standartlarda editörlük.</p>
-            </div>
-            <div class="service-card p-8 rounded-3xl">
-                <div class="text-2xl mb-4 text-emerald font-bold italic">🩺</div>
-                <h4 class="font-bold text-navy-dark mb-2">Tıpta Uzmanlık</h4>
-                <p class="text-xs text-slate-500 italic">Tıbbi tez süreçlerinde uzman desteği.</p>
-            </div>
-            <div class="service-card p-8 rounded-3xl">
-                <div class="text-2xl mb-4 text-emerald font-bold italic">🖋️</div>
-                <h4 class="font-bold text-navy-dark mb-2">Tez Danışmanlığı</h4>
-                <p class="text-xs text-slate-500 italic">YL ve Doktora rehberliği.</p>
-            </div>
-            <div class="service-card p-8 rounded-3xl">
-                <div class="text-2xl mb-4 text-emerald font-bold italic">💼</div>
-                <h4 class="font-bold text-navy-dark mb-2">Kurumsal Hizmet</h4>
-                <p class="text-xs text-slate-500 italic">Kurumsal akademik projeler.</p>
-            </div>
-            <div class="service-card p-8 rounded-3xl">
-                <div class="text-2xl mb-4 text-emerald font-bold italic">📊</div>
-                <h4 class="font-bold text-navy-dark mb-2">Analiz Araştırma</h4>
-                <p class="text-xs text-slate-500 italic">Bilimsel veri analiz süreci.</p>
-            </div>
-            <div class="service-card p-8 rounded-3xl">
-                <div class="text-2xl mb-4 text-emerald font-bold italic">✏️</div>
-                <h4 class="font-bold text-navy-dark mb-2">Dil Editörlük</h4>
-                <p class="text-xs text-slate-500 italic">Redaksiyon ve yazım kontrolü.</p>
-            </div>
-        </div>
-    </section>
 
     <footer class="bg-navy-dark text-white py-16 px-8">
         <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center opacity-70">
@@ -91,6 +49,5 @@
             </div>
         </div>
     </footer>
-
 </body>
 </html>
