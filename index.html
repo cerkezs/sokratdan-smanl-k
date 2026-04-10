@@ -19,12 +19,15 @@
         .premium-card:hover { transform: translateY(-10px); border-color: #059669; }
         .trust-card { background: #ffffff; border: 1px solid #f1f5f9; padding: 2.5rem; border-radius: 2rem; transition: all 0.3s; box-shadow: 0 10px 25px rgba(0,0,0,0.03); }
         .trust-card:hover { border-color: #059669; transform: translateY(-5px); box-shadow: 0 20px 40px rgba(5,150,105,0.08); }
+        /* Hero Alanı İçin Logo Sınıfı */
+        .Hero_Logo { opacity: 0.8; filter: drop-shadow(0 0 10px rgba(255,255,255,0.1)); transition: all 0.3s; }
+        .Hero_Logo:hover { opacity: 1; filter: drop-shadow(0 0 15px rgba(255,255,255,0.2)); }
     </style>
 </head>
 <body class="antialiased">
-    <nav class="border-b border-gray-100 py-2 px-8 flex justify-between items-center sticky top-0 bg-white z-50">
+    <nav class="border-b border-gray-100 py-4 px-8 flex justify-between items-center sticky top-0 bg-white z-50">
         <a href="index.html" class="hover:opacity-80 transition block">
-            <img src="image_15.png" alt="Sokrat Danışmanlık Logo" class="h-24 w-auto object-contain">
+            <img src="image_15.png" alt="Sokrat Danışmanlık Logo" class="h-12 w-auto">
         </a>
         <div class="hidden md:flex items-center space-x-10 text-sm font-semibold text-slate-600 uppercase tracking-widest text-center">
             <a href="index.html" class="text-emerald font-bold border-b-2 border-emerald pb-1 transition">Ana Sayfa</a>
@@ -48,7 +51,11 @@
                     <a href="hizmetler.html" class="border border-slate-600 px-10 py-4 rounded-xl font-bold text-lg hover:bg-white hover:text-navy-dark transition text-center font-bold">Hizmetleri İncele</a>
                 </div>
             </div>
-            <div class="hidden md:block w-1/3 h-64 bg-white/5 rounded-3xl border border-white/10 flex items-center justify-center italic text-emerald/10 uppercase tracking-widest px-4 text-center">Sokrat Akademik Danışmanlık</div>
+            <div class="md:w-1/3 flex items-center justify-center pt-16 md:pt-0">
+                <div class="w-full max-w-sm aspect-video bg-white/5 rounded-3xl border border-white/10 flex items-center justify-center px-8 text-center group transition hover:border-emerald/30">
+                    <img src="image_15.png" alt="Sokrat Danışmanlık Logo" class="h-16 w-auto Hero_Logo">
+                </div>
+            </div>
         </div>
     </header>
 
@@ -64,14 +71,38 @@
         </div>
     </section>
 
+    <section class="py-24 px-8 bg-white text-center">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-navy-dark mb-4 uppercase tracking-widest font-bold">NEDEN SOKRAT?</h2>
+            <div class="w-12 h-1 bg-emerald mx-auto mb-16 rounded-full"></div>
+            <div class="grid md:grid-cols-3 gap-8 text-left">
+                <div class="trust-card group">
+                    <div class="flex items-center justify-between mb-8"><h4 class="text-emerald font-black uppercase tracking-[0.15em] text-xs font-bold">ETİK DEĞERLER</h4><div class="text-2xl">✅</div></div>
+                    <p class="text-slate-500 font-medium text-sm italic leading-relaxed font-bold">Akademik dürüstlük ve üniversite etik ilkeleri bizim için vazgeçilmezdir.</p>
+                </div>
+                <div class="trust-card group">
+                    <div class="flex items-center justify-between mb-8"><h4 class="text-emerald font-black uppercase tracking-[0.15em] text-xs font-bold">UZMAN EKİP</h4><div class="text-2xl">🧑‍🏫</div></div>
+                    <p class="text-slate-500 font-medium text-sm italic leading-relaxed font-bold">Alanında uzman tecrübeli akademisyenlerle birebir çözüm ortaklığı.</p>
+                </div>
+                <div class="trust-card group">
+                    <div class="flex items-center justify-between mb-8"><h4 class="text-emerald font-black uppercase tracking-[0.15em] text-xs font-bold">GÜVENLİ TESLİM</h4><div class="text-2xl">⏱️</div></div>
+                    <p class="text-slate-500 font-medium text-sm italic leading-relaxed font-bold">Süreç takviminize uygun, zamanında ve eksiksiz akademik teslimat.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <footer class="bg-navy-dark text-white pt-20 pb-10 px-8 border-t-4 border-emerald text-center md:text-left">
         <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-16">
-            <div class="lg:col-span-1"><div class="text-xl font-extrabold tracking-tighter mb-6 uppercase italic">SOKRAT <span class="text-emerald font-light">DANIŞMANLIK</span></div><p class="text-slate-400 text-[11px] font-light">Profesyonel akademik rehberlik çözümleri.</p></div>
-            <div><h4 class="text-[11px] font-black uppercase tracking-[0.2em] mb-8 text-slate-200 font-bold">Linkler</h4><ul class="space-y-4 text-[11px] font-medium text-slate-400 uppercase font-bold"><li><a href="index.html">Anasayfa</a></li><li><a href="hizmetler.html">Hizmetlerimiz</a></li><li><a href="blog.html">Akademik Rehber</a></li><li><a href="iletisim.html">İletişim</a></li></ul></div>
-            <div><h4 class="text-[11px] font-black uppercase tracking-[0.2em] mb-8 text-slate-200 font-bold uppercase">İletişim</h4><ul class="space-y-4 text-[11px] font-medium text-slate-400 font-bold uppercase"><li>📞 +90 5XX XXX XX XX</li><li>✉️ info@sokratdanismanlik.com</li></ul></div>
+            <div class="lg:col-span-1"><div class="text-xl font-extrabold tracking-tighter mb-6 uppercase italic">SOKRAT <span class="text-emerald font-light">DANIŞMANLIK</span></div><p class="text-slate-400 text-[11px] leading-relaxed font-light">Profesyonel akademik rehberlik çözümleri.</p></div>
+            <div><h4 class="text-[11px] font-black uppercase tracking-[0.2em] mb-8 text-slate-200 font-bold">Linkler</h4><ul class="space-y-4 text-[11px] font-medium text-slate-400 uppercase tracking-tighter font-bold"><li><a href="index.html">Anasayfa</a></li><li><a href="hizmetler.html">Hizmetlerimiz</a></li><li><a href="blog.html">Akademik Rehber</a></li><li><a href="iletisim.html">İletişim</a></li></ul></div>
+            <div><h4 class="text-[11px] font-black uppercase tracking-[0.2em] mb-8 text-slate-200 font-bold">Hizmetler</h4><ul class="space-y-4 text-[11px] font-medium text-slate-400 uppercase tracking-tighter"><li>Tez Danışmanlığı</li><li>Veri Analizi (SPSS)</li><li>Makale Editörlüğü</li></ul></div>
+            <div><h4 class="text-[11px] font-black uppercase tracking-[0.2em] mb-8 text-slate-200 font-bold">Son Rehberler</h4><ul class="space-y-4 text-[11px] font-medium text-slate-400 uppercase tracking-tighter font-bold"><li><a href="blog.html">Tez Yazım İpuçları</a></li><li><a href="blog.html">SPSS Analiz Rehberi</a></li><li><a href="blog.html">Etik Kurul Süreci</a></li></ul></div>
+            <div><h4 class="text-[11px] font-black uppercase tracking-[0.2em] mb-8 text-slate-200 font-bold">İletişim</h4><ul class="space-y-5 text-[11px] font-medium text-slate-400 font-bold uppercase"><li>📞 +90 5XX XXX XX XX</li><li>✉️ info@sokratdanismanlik.com</li><li class="leading-relaxed text-[10px]">📍 İstanbul - Afyon / Türkiye</li></ul></div>
         </div>
-        <div class="max-w-7xl mx-auto pt-8 border-t border-slate-800/50 flex flex-col md:flex-row justify-between items-center gap-4 text-[10px] font-bold text-slate-500 uppercase">
-            <div>© Sokrat Akademik Danışmanlık</div><div>Designed by <span class="text-slate-300">Serdar ŞEKER</span></div>
+        <div class="max-w-7xl mx-auto pt-8 border-t border-slate-800/50 flex flex-col md:flex-row justify-between items-center gap-4 text-center text-[10px] font-bold text-slate-500 uppercase">
+            <div>© Sokrat Akademik Danışmanlık</div>
+            <div>Designed by <span class="text-slate-300">Serdar ŞEKER</span></div>
         </div>
     </footer>
 </body>
