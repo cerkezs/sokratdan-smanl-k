@@ -17,9 +17,8 @@
         .nav-link:hover::after { width: 100%; }
         .premium-card { background: #ffffff; border: 1px solid #f1f5f9; box-shadow: 0 15px 35px rgba(0,0,0,0.06); transition: all 0.3s ease; }
         .premium-card:hover { transform: translateY(-10px); border-color: #059669; }
-        /* Neden Biz Kartları */
-        .trust-card { background: #ffffff; border: 1px solid #e2e8f0; padding: 2.5rem; border-radius: 1.5rem; transition: all 0.3s; }
-        .trust-card:hover { border-color: #059669; transform: scale(1.03); box-shadow: 0 20px 40px rgba(5,150,105,0.08); }
+        .trust-card { background: #ffffff; border: 1px solid #f1f5f9; padding: 2.5rem; border-radius: 2rem; transition: all 0.3s; box-shadow: 0 10px 25px rgba(0,0,0,0.03); }
+        .trust-card:hover { border-color: #059669; transform: translateY(-5px); box-shadow: 0 20px 40px rgba(5,150,105,0.08); }
     </style>
 </head>
 <body class="antialiased">
@@ -48,7 +47,7 @@
                     Akademik Başarıyı <br> <span class="text-emerald text-5xl md:text-7xl">Şansa Bırakmayın.</span>
                 </h1>
                 <p class="text-lg md:text-xl text-slate-300 mb-12 max-w-xl font-light leading-relaxed mx-auto md:mx-0">
-                    Tez, makale ve projelerinizde metodolojik doğruluk ve akademik titizlikle yanınızdayız. Bilimsel veriyi stratejiyle birleştiriyoruz.
+                    Tez, makale ve projelerinizde metodolojik doğruluk ve akademik titizlikle yanınızdayız.
                 </p>
                 <div class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6 justify-center md:justify-start">
                     <a href="https://wa.me/905XXXXXXXXX" class="bg-emerald px-10 py-4 rounded-xl font-bold text-lg shadow-xl shadow-emerald/20 transition hover:scale-105">Hemen Başlayalım</a>
@@ -61,61 +60,38 @@
         </div>
     </header>
 
-    <section id="hizmetler" class="py-24 px-8 bg-slate-50/50">
-        <div class="max-w-6xl mx-auto text-center mb-16 uppercase tracking-widest">
-            <h2 class="text-3xl font-bold text-navy-dark">HİZMET ALANLARIMIZ</h2>
-            <div class="w-12 h-1 bg-emerald mx-auto mt-4"></div>
-        </div>
-        <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 mb-12">
-            <div class="premium-card p-10 rounded-[2rem] text-center md:text-left">
-                <div class="text-4xl mb-6">📄</div>
-                <h3 class="text-xl font-bold mb-3">Tez Danışmanlığı</h3>
-                <p class="text-slate-500 text-sm leading-relaxed font-light italic">Üniversite yazım kılavuzlarına tam uyumlu profesyonel rehberlik.</p>
-            </div>
-            <div class="premium-card p-10 rounded-[2rem] text-center md:text-left">
-                <div class="text-4xl mb-6">📊</div>
-                <h3 class="text-xl font-bold mb-3">Veri Analizi</h3>
-                <p class="text-slate-500 text-sm leading-relaxed font-light italic">SPSS ve nitel araştırmaların bilimsel raporlanması.</p>
-            </div>
-            <div class="premium-card p-10 rounded-[2rem] text-center md:text-left">
-                <div class="text-4xl mb-6">✅</div>
-                <h3 class="text-xl font-bold mb-3">Etik Denetim</h3>
-                <p class="text-slate-500 text-sm leading-relaxed font-light italic">İntihal raporlama ve akademik redaksiyon süreçleri.</p>
+    <section class="py-24 px-8 bg-white text-center">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-navy-dark mb-4 uppercase tracking-widest">NEDEN SOKRAT?</h2>
+            <div class="w-12 h-1 bg-emerald mx-auto mb-16 rounded-full"></div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="trust-card group text-left">
+                    <div class="flex items-center justify-between mb-8">
+                        <h4 class="text-emerald font-black uppercase tracking-[0.15em] text-xs">ETİK DEĞERLER</h4>
+                        <div class="text-2xl">✅</div>
+                    </div>
+                    <p class="text-slate-500 font-medium text-sm leading-relaxed">Üniversite etik kurallarına tam uyum garantisi ile akademik dürüstlüğü koruyoruz.</p>
+                </div>
+                <div class="trust-card group text-left">
+                    <div class="flex items-center justify-between mb-8">
+                        <h4 class="text-emerald font-black uppercase tracking-[0.15em] text-xs">UZMAN EKİP</h4>
+                        <div class="text-2xl">🧑‍🏫</div>
+                    </div>
+                    <p class="text-slate-500 font-medium text-sm leading-relaxed">Alanında uzman akademisyenlerden doğrudan ve kesintisiz iletişim imkanı sağlıyoruz.</p>
+                </div>
+                <div class="trust-card group text-left">
+                    <div class="flex items-center justify-between mb-8">
+                        <h4 class="text-emerald font-black uppercase tracking-[0.15em] text-xs">GÜVENLİ TESLİM</h4>
+                        <div class="text-2xl">⏱️</div>
+                    </div>
+                    <p class="text-slate-500 font-medium text-sm leading-relaxed">Zamanında ve kusursuz akademik teslimat prensibi ile akademik takviminize uyuyoruz.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="py-24 px-8 bg-white">
-        <div class="max-w-6xl mx-auto text-center mb-20 uppercase tracking-widest">
-            <h2 class="text-3xl font-bold text-navy-dark">NEDEN SOKRAT?</h2>
-            <div class="w-12 h-1 bg-emerald mx-auto mt-4"></div>
-        </div>
-        <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
-            <div class="trust-card group text-left">
-                <div class="flex items-center justify-between mb-6 border-b border-gray-100 pb-5">
-                    <h4 class="text-emerald font-extrabold uppercase tracking-[0.2em] text-xs">01. ETİK DEĞERLER</h4>
-                    <div class="text-2xl group-hover:scale-110 transition italic">✅</div>
-                </div>
-                <p class="text-navy-dark font-medium text-sm leading-relaxed">Üniversite etik kurallarına tam uyum garantisi ile akademik dürüstlüğü koruyoruz.</p>
-            </div>
-            <div class="trust-card group text-left">
-                <div class="flex items-center justify-between mb-6 border-b border-gray-100 pb-5">
-                    <h4 class="text-emerald font-extrabold uppercase tracking-[0.2em] text-xs">02. UZMAN EKİP</h4>
-                    <div class="text-2xl group-hover:scale-110 transition italic">🧑‍🏫</div>
-                </div>
-                <p class="text-navy-dark font-medium text-sm leading-relaxed">Alanında uzman akademisyenlerden doğrudan ve kesintisiz iletişim imkanı.</p>
-            </div>
-            <div class="trust-card group text-left">
-                <div class="flex items-center justify-between mb-6 border-b border-gray-100 pb-5">
-                    <h4 class="text-emerald font-extrabold uppercase tracking-[0.2em] text-xs">03. GÜVENLİ TESLİM</h4>
-                    <div class="text-2xl group-hover:scale-110 transition italic">⏱️</div>
-                </div>
-                <p class="text-navy-dark font-medium text-sm leading-relaxed">Zamanında ve kusursuz akademik teslimat prensibi ile çalışıyoruz.</p>
-            </div>
-        </div>
-    </section>
-
-    <footer class="bg-navy-dark text-white py-16 px-8 text-center md:text-left">
+    <footer class="bg-navy-dark text-white py-16 px-8">
         <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center opacity-70">
             <div class="text-xl font-extrabold mb-4 md:mb-0 tracking-tighter uppercase italic">
                 SOKRAT <span class="text-emerald">DANIŞMANLIK</span>
