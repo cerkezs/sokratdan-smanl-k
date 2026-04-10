@@ -15,18 +15,17 @@
         .nav-link { position: relative; }
         .nav-link::after { content: ''; position: absolute; width: 0; height: 2px; bottom: -4px; left: 0; background-color: #059669; transition: width 0.3s; }
         .nav-link:hover::after { width: 100%; }
-        .contact-card { background: #ffffff; border: 1px solid #f1f5f9; box-shadow: 0 10px 30px rgba(0,0,0,0.05); transition: all 0.3s ease; }
         .input-style { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 0.75rem; padding: 1rem; width: 100%; outline: none; transition: all 0.3s; }
         .input-style:focus { border-color: #059669; background: #ffffff; box-shadow: 0 0 0 4px rgba(5, 150, 105, 0.05); }
     </style>
 </head>
 <body class="antialiased overflow-x-hidden">
 
-    <nav class="border-b border-gray-100 py-6 px-8 flex justify-between items-center sticky top-0 bg-white z-50 text-center">
-        <a href="index.html" class="text-2xl font-extrabold tracking-tighter text-navy-dark uppercase hover:opacity-80 transition">
-            SOKRAT <span class="text-emerald font-light text-2xl">DANIŞMANLIK</span>
+    <nav class="border-b border-gray-100 py-2 px-8 flex justify-between items-center sticky top-0 bg-white z-50">
+        <a href="index.html" class="hover:opacity-80 transition block">
+            <img src="image_15.png" alt="Sokrat Danışmanlık Logo" class="h-24 w-auto object-contain">
         </a>
-        <div class="hidden md:flex items-center space-x-10 text-sm font-semibold text-slate-600 uppercase tracking-widest">
+        <div class="hidden md:flex items-center space-x-10 text-sm font-semibold text-slate-600 uppercase tracking-widest text-center">
             <a href="index.html" class="nav-link hover:text-emerald transition font-bold">Ana Sayfa</a>
             <a href="hizmetler.html" class="nav-link hover:text-emerald transition font-bold">Hizmetlerimiz</a>
             <a href="blog.html" class="nav-link hover:text-emerald transition font-bold">Akademik Rehber</a>
@@ -55,20 +54,20 @@
         <div class="max-w-6xl mx-auto grid lg:grid-cols-3 gap-12">
             
             <div class="lg:col-span-1 space-y-6">
-                <div class="contact-card p-8 rounded-[2rem]">
+                <div class="bg-white p-8 rounded-[2rem] border border-gray-100 shadow-sm text-center md:text-left">
                     <div class="text-emerald text-2xl mb-4">📞</div>
                     <h4 class="font-bold text-navy-dark mb-1 uppercase tracking-tighter text-sm">Telefon</h4>
-                    <p class="text-slate-500 text-[13px] font-bold font-medium">+90 5XX XXX XX XX</p>
+                    <p class="text-slate-500 text-[13px] font-bold">+90 5XX XXX XX XX</p>
                 </div>
-                <div class="contact-card p-8 rounded-[2rem]">
+                <div class="bg-white p-8 rounded-[2rem] border border-gray-100 shadow-sm text-center md:text-left">
                     <div class="text-emerald text-2xl mb-4">✉️</div>
                     <h4 class="font-bold text-navy-dark mb-1 uppercase tracking-tighter text-sm">E-Posta</h4>
-                    <p class="text-slate-500 text-[13px] font-bold font-medium">info@sokratdanismanlik.com</p>
+                    <p class="text-slate-500 text-[13px] font-bold">info@sokratdanismanlik.com</p>
                 </div>
-                <div class="contact-card p-8 rounded-[2rem]">
+                <div class="bg-white p-8 rounded-[2rem] border border-gray-100 shadow-sm text-center md:text-left">
                     <div class="text-emerald text-2xl mb-4">📍</div>
                     <h4 class="font-bold text-navy-dark mb-1 uppercase tracking-tighter text-sm">Ofis</h4>
-                    <p class="text-slate-500 text-[13px] font-bold font-medium leading-relaxed">İstanbul - Afyon / Türkiye</p>
+                    <p class="text-slate-500 text-[13px] font-bold leading-relaxed font-bold uppercase">İstanbul - Afyon / Türkiye</p>
                 </div>
             </div>
 
@@ -76,23 +75,11 @@
                 <div class="bg-white p-10 rounded-[2.5rem] shadow-sm border border-gray-100">
                     <form action="#" class="space-y-6">
                         <div class="grid md:grid-cols-2 gap-6">
-                            <div>
-                                <label class="block text-[10px] font-black text-slate-400 uppercase tracking-widest mb-2 ml-1">Adınız Soyadınız</label>
-                                <input type="text" placeholder="Örn: Ahmet Yılmaz" class="input-style">
-                            </div>
-                            <div>
-                                <label class="block text-[10px] font-black text-slate-400 uppercase tracking-widest mb-2 ml-1">E-Posta Adresiniz</label>
-                                <input type="email" placeholder="ahmet@example.com" class="input-style">
-                            </div>
+                            <input type="text" placeholder="Adınız Soyadınız" class="input-style font-bold">
+                            <input type="email" placeholder="E-Posta Adresiniz" class="input-style font-bold">
                         </div>
-                        <div>
-                            <label class="block text-[10px] font-black text-slate-400 uppercase tracking-widest mb-2 ml-1">Konu</label>
-                            <input type="text" placeholder="Tez Danışmanlığı, Veri Analizi vb." class="input-style">
-                        </div>
-                        <div>
-                            <label class="block text-[10px] font-black text-slate-400 uppercase tracking-widest mb-2 ml-1">Mesajınız</label>
-                            <textarea rows="5" placeholder="Size nasıl yardımcı olabiliriz?" class="input-style"></textarea>
-                        </div>
+                        <input type="text" placeholder="Konu" class="input-style font-bold">
+                        <textarea rows="5" placeholder="Size nasıl yardımcı olabiliriz?" class="input-style font-bold"></textarea>
                         <button type="submit" class="w-full bg-emerald text-white font-bold py-4 rounded-xl shadow-lg shadow-emerald/20 hover:bg-emerald/90 transition transform hover:-translate-y-1 uppercase tracking-widest text-sm">
                             Mesajı Gönder
                         </button>
@@ -106,12 +93,12 @@
     <footer class="bg-navy-dark text-white pt-20 pb-10 px-8 border-t-4 border-emerald text-center md:text-left">
         <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-16">
             <div class="lg:col-span-1">
-                <div class="text-xl font-extrabold tracking-tighter mb-6 uppercase italic">SOKRAT <span class="text-emerald font-light">DANIŞMANLIK</span></div>
-                <p class="text-slate-400 text-[11px] leading-relaxed font-light">Profesyonel akademik rehberlik ve veri analiz çözümleri.</p>
+                <div class="text-xl font-extrabold tracking-tighter mb-6 uppercase italic font-bold">SOKRAT <span class="text-emerald font-light">DANIŞMANLIK</span></div>
+                <p class="text-slate-400 text-[11px] font-light">Profesyonel akademik rehberlik çözümleri.</p>
             </div>
             <div>
                 <h4 class="text-[11px] font-black uppercase tracking-[0.2em] mb-8 text-slate-200 font-bold">Linkler</h4>
-                <ul class="space-y-4 text-[11px] font-medium text-slate-400 uppercase tracking-tighter font-bold">
+                <ul class="space-y-4 text-[11px] font-medium text-slate-400 uppercase font-bold">
                     <li><a href="index.html" class="hover:text-emerald transition">Anasayfa</a></li>
                     <li><a href="hizmetler.html" class="hover:text-emerald transition">Hizmetlerimiz</a></li>
                     <li><a href="blog.html" class="hover:text-emerald transition">Akademik Rehber</a></li>
@@ -119,33 +106,17 @@
                 </ul>
             </div>
             <div>
-                <h4 class="text-[11px] font-black uppercase tracking-[0.2em] mb-8 text-slate-200 font-bold">Hizmetler</h4>
-                <ul class="space-y-4 text-[11px] font-medium text-slate-400 uppercase tracking-tighter">
-                    <li>Tez Danışmanlığı</li>
-                    <li>Veri Analizi (SPSS)</li>
-                    <li>Makale Editörlüğü</li>
-                </ul>
-            </div>
-            <div>
-                <h4 class="text-[11px] font-black uppercase tracking-[0.2em] mb-8 text-slate-200 font-bold">Son Rehberler</h4>
-                <ul class="space-y-4 text-[11px] font-medium text-slate-400 uppercase tracking-tighter font-bold">
-                    <li><a href="blog.html" class="hover:text-emerald transition">Tez Yazım İpuçları</a></li>
-                    <li><a href="blog.html" class="hover:text-emerald transition">SPSS Analiz Rehberi</a></li>
-                    <li><a href="blog.html" class="hover:text-emerald transition">Etik Kurul Süreci</a></li>
-                </ul>
-            </div>
-            <div>
                 <h4 class="text-[11px] font-black uppercase tracking-[0.2em] mb-8 text-slate-200 font-bold">İletişim</h4>
-                <ul class="space-y-5 text-[11px] font-medium text-slate-400 font-bold uppercase">
-                    <li class="flex items-center gap-3 justify-center md:justify-start font-bold"><span>📞</span><span>+90 5XX XXX XX XX</span></li>
-                    <li class="flex items-center gap-3 justify-center md:justify-start font-bold"><span>✉️</span><span>info@sokratdanismanlik.com</span></li>
-                    <li class="flex items-start gap-3 justify-center md:justify-start font-bold"><span>📍</span><span class="leading-relaxed text-[10px]">İstanbul - Afyon / Türkiye</span></li>
+                <ul class="space-y-5 text-[11px] font-bold text-slate-400 uppercase font-bold">
+                    <li>📞 +90 5XX XXX XX XX</li>
+                    <li>✉️ info@sokratdanismanlik.com</li>
+                    <li class="leading-relaxed text-[10px]">📍 İstanbul - Afyon / Türkiye</li>
                 </ul>
             </div>
         </div>
-        <div class="max-w-7xl mx-auto pt-8 border-t border-slate-800/50 flex flex-col md:flex-row justify-between items-center gap-4 text-center">
-            <div class="text-[10px] uppercase tracking-[0.2em] font-bold text-slate-500">© Sokrat Akademik Danışmanlık</div>
-            <div class="text-[10px] uppercase tracking-[0.1em] text-slate-500 font-bold">Copyright 2026 © Designed by <span class="text-slate-300">Serdar ŞEKER</span></div>
+        <div class="max-w-7xl mx-auto pt-8 border-t border-slate-800/50 flex flex-col md:flex-row justify-between items-center gap-4 text-[10px] font-bold text-slate-500 uppercase">
+            <div>© Sokrat Akademik Danışmanlık</div>
+            <div>Copyright 2026 © Designed by <span class="text-slate-300 font-bold">Serdar ŞEKER</span></div>
         </div>
     </footer>
 
