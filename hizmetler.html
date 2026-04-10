@@ -15,11 +15,12 @@
         .nav-link { position: relative; }
         .nav-link::after { content: ''; position: absolute; width: 0; height: 2px; bottom: -4px; left: 0; background-color: #059669; transition: width 0.3s; }
         .nav-link:hover::after { width: 100%; }
+        /* Detaylı Hizmet Kartları */
         .service-card { background: #ffffff; border: 1px solid #f1f5f9; box-shadow: 0 10px 30px rgba(0,0,0,0.05); transition: all 0.3s ease; }
         .service-card:hover { border-color: #059669; transform: translateY(-5px); }
     </style>
 </head>
-<body class="antialiased">
+<body class="antialiased overflow-x-hidden">
 
     <nav class="border-b border-gray-100 py-6 px-8 flex justify-between items-center sticky top-0 bg-white z-50 text-center">
         <a href="index.html" class="text-2xl font-extrabold tracking-tighter text-navy-dark uppercase hover:opacity-80 transition">
@@ -33,13 +34,22 @@
         </div>
     </nav>
 
-    <header class="hero-gradient py-24 px-8 text-white text-center">
-        <h1 class="text-4xl md:text-5xl font-extrabold mb-4 tracking-tighter uppercase italic">Hizmet Kapsamımız</h1>
-        <p class="text-slate-400 font-light max-w-2xl mx-auto">Tüm akademik branşlarda profesyonel rehberlik ve analiz süreçlerimiz.</p>
+    <header class="bg-slate-50 border-b border-gray-100 py-24 px-8 text-left">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+            <h1 class="text-3xl md:text-4xl font-light text-navy-dark tracking-tighter uppercase italic">
+                Hizmet Kapsamımız
+            </h1>
+            <div class="text-[10px] font-black text-emerald uppercase tracking-[0.3em] font-bold">
+                SOKRAT DANIŞMANLIK
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto pt-6 text-slate-500 font-light max-w-2xl text-base md:text-lg">
+            Tüm akademik branşlarda profesyonel rehberlik ve ileri düzey veri analiz süreçlerimizin detayları.
+        </div>
     </header>
 
-    <section class="py-24 px-8 bg-slate-50/50">
-        <div class="max-w-6xl mx-auto grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+    <section class="py-24 px-8 bg-white">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div class="service-card p-8 rounded-3xl">
                 <div class="text-2xl mb-4 text-emerald font-bold italic">🎓</div>
                 <h4 class="font-bold text-navy-dark mb-2">Akademik Hizmetler</h4>
@@ -108,9 +118,9 @@
             <div>
                 <h4 class="text-[11px] font-black uppercase tracking-[0.2em] mb-8 text-slate-200 font-bold">Son Rehberler</h4>
                 <ul class="space-y-4 text-[11px] font-medium text-slate-400 uppercase tracking-tighter">
-                    <li><a href="blog.html" class="hover:text-emerald transition">Tez Yazım İpuçları</a></li>
-                    <li><a href="blog.html" class="hover:text-emerald transition">SPSS Analiz Rehberi</a></li>
-                    <li><a href="blog.html" class="hover:text-emerald transition">Etik Kurul Süreci</a></li>
+                    <li><a href="blog.html" class="hover:text-emerald transition font-bold">Tez Yazım İpuçları</a></li>
+                    <li><a href="blog.html" class="hover:text-emerald transition font-bold">SPSS Analiz Rehberi</a></li>
+                    <li><a href="blog.html" class="hover:text-emerald transition font-bold">Etik Kurul Süreci</a></li>
                 </ul>
             </div>
             <div>
@@ -122,10 +132,11 @@
                 </ul>
             </div>
         </div>
-        <div class="max-w-7xl mx-auto pt-8 border-t border-slate-800/50 flex flex-col md:flex-row justify-between items-center gap-4">
+        <div class="max-w-7xl mx-auto pt-8 border-t border-slate-800/50 flex flex-col md:flex-row justify-between items-center gap-4 text-center">
             <div class="text-[10px] uppercase tracking-[0.2em] font-bold text-slate-500">© Sokrat Akademik Danışmanlık</div>
             <div class="text-[10px] uppercase tracking-[0.1em] text-slate-500 font-bold">Copyright 2026 © Designed by <span class="text-slate-300">Serdar ŞEKER</span></div>
         </div>
     </footer>
+
 </body>
 </html>
