@@ -18,7 +18,6 @@
         .premium-card { background: #ffffff; border: 1px solid #f1f5f9; box-shadow: 0 15px 35px rgba(0,0,0,0.06); transition: all 0.3s ease; }
         .premium-card:hover { transform: translateY(-10px); border-color: #059669; }
         .Hero_Logo { opacity: 1; transition: all 0.3s; border-radius: 1rem; }
-        .Hero_Logo:hover { transform: scale(1.02); }
     </style>
 </head>
 <body class="antialiased">
@@ -38,9 +37,9 @@
         </div>
     </nav>
 
-    <header class="hero-gradient py-24 md:py-36 px-8 text-white relative overflow-hidden">
+    <header class="hero-gradient py-24 md:py-36 px-8 text-white relative overflow-hidden text-center md:text-left">
         <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between">
-            <div class="md:w-3/5 text-center md:text-left">
+            <div class="md:w-3/5">
                 <div class="inline-flex items-center space-x-2 bg-emerald/10 text-emerald px-4 py-2 rounded-full mb-6 text-[10px] font-black uppercase tracking-widest font-bold">
                     <span class="w-2 h-2 bg-emerald rounded-full"></span><span>Güvenilir Akademik Partner</span>
                 </div>
@@ -51,16 +50,15 @@
                     <a href="hizmetler.html" class="border border-slate-600 px-10 py-4 rounded-xl font-bold text-lg hover:bg-white hover:text-navy-dark transition text-center font-bold uppercase tracking-widest">Hizmetleri İncele</a>
                 </div>
             </div>
-            
             <div class="md:w-1/3 flex items-center justify-center pt-16 md:pt-0">
-                <div class="w-full max-w-sm aspect-video bg-white/5 rounded-3xl border border-white/10 flex items-center justify-center px-4 overflow-hidden group hover:border-emerald/30 transition">
+                <div class="w-full max-w-sm aspect-video bg-white/5 rounded-3xl border border-white/10 flex items-center justify-center px-4 overflow-hidden">
                     <img src="image_16.jpg" alt="Sokrat Danışmanlık" class="w-full h-auto Hero_Logo object-contain">
                 </div>
             </div>
         </div>
     </header>
 
-    <section id="hizmetler" class="py-24 px-8 bg-slate-50/50">
+    <section class="py-24 px-8 bg-slate-50/50">
         <div class="max-w-6xl mx-auto text-center mb-16 uppercase tracking-widest">
             <h2 class="text-3xl font-bold text-navy-dark font-bold tracking-tighter">HİZMET ALANLARIMIZ</h2>
             <div class="w-12 h-1 bg-emerald mx-auto mt-4 rounded-full"></div>
@@ -72,14 +70,12 @@
         </div>
     </section>
 
-    <footer class="bg-navy-dark text-white pt-20 pb-10 px-8 border-t-4 border-emerald text-center md:text-left">
-        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-16">
-            
+    <footer class="bg-navy-dark text-white pt-10 pb-6 px-8 border-t-4 border-emerald text-center md:text-left">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-8">
             <div class="lg:col-span-1">
                 <div class="text-xl font-extrabold tracking-tighter mb-6 uppercase italic font-bold">SOKRAT <span class="text-emerald font-light">DANIŞMANLIK</span></div>
                 <p class="text-slate-400 text-[11px] leading-relaxed font-light font-bold">Profesyonel akademik rehberlik çözümleri.</p>
             </div>
-
             <div>
                 <h4 class="text-[11px] font-black uppercase tracking-[0.2em] mb-8 text-slate-200 font-bold">Linkler</h4>
                 <ul class="space-y-4 text-[11px] font-medium text-slate-400 uppercase tracking-tighter font-bold">
@@ -89,7 +85,6 @@
                     <li><a href="iletisim.html" class="hover:text-emerald transition">İletişim</a></li>
                 </ul>
             </div>
-
             <div>
                 <h4 class="text-[11px] font-black uppercase tracking-[0.2em] mb-8 text-slate-200 font-bold">Hizmetler</h4>
                 <ul class="space-y-4 text-[11px] font-medium text-slate-400 uppercase tracking-tighter font-bold">
@@ -98,7 +93,6 @@
                     <li>Makale Editörlüğü</li>
                 </ul>
             </div>
-
             <div>
                 <h4 class="text-[11px] font-black uppercase tracking-[0.2em] mb-8 text-slate-200 font-bold">Son Rehberler</h4>
                 <ul class="space-y-4 text-[11px] font-medium text-slate-400 uppercase tracking-tighter font-bold">
@@ -107,7 +101,6 @@
                     <li><a href="blog.html" class="hover:text-emerald transition font-bold">Etik Kurul Süreci</a></li>
                 </ul>
             </div>
-
             <div>
                 <h4 class="text-[11px] font-black uppercase tracking-[0.2em] mb-8 text-slate-200 font-bold">İletişim</h4>
                 <ul class="space-y-5 text-[11px] font-bold text-slate-400 uppercase">
@@ -123,12 +116,10 @@
                 </ul>
             </div>
         </div>
-
-        <div class="max-w-7xl mx-auto pt-8 border-t border-slate-800/50 flex flex-col md:flex-row justify-between items-center gap-4 text-[10px] font-bold text-slate-500 uppercase tracking-widest">
+        <div class="max-w-7xl mx-auto pt-6 border-t border-slate-800/50 flex flex-col md:flex-row justify-between items-center gap-4 text-[10px] font-bold text-slate-500 uppercase tracking-widest">
             <div>© Sokrat Akademik Danışmanlık</div>
             <div>Copyright 2026 © Designed by <span class="text-slate-300 font-bold">Serdar ŞEKER</span></div>
         </div>
     </footer>
-
 </body>
 </html>
