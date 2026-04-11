@@ -15,6 +15,7 @@
         .nav-link { position: relative; }
         .nav-link::after { content: ''; position: absolute; width: 0; height: 2px; bottom: -4px; left: 0; background-color: #059669; transition: width 0.3s; }
         .nav-link:hover::after { width: 100%; }
+        /* Blog Kartları */
         .blog-card { background: #ffffff; border: 1px solid #f1f5f9; box-shadow: 0 10px 30px rgba(0,0,0,0.05); transition: all 0.3s ease; overflow: hidden; }
         .blog-card:hover { transform: translateY(-8px); border-color: #059669; }
     </style>
@@ -30,16 +31,20 @@
             <a href="hizmetler.html" class="nav-link hover:text-emerald transition font-bold">Hizmetlerimiz</a>
             <a href="blog.html" class="text-emerald border-b-2 border-emerald pb-1 transition font-bold">Akademik Rehber</a>
             <a href="iletisim.html" class="nav-link hover:text-emerald transition font-bold">İletişim</a>
-            <a href="https://wa.me/905XXXXXXXXX" class="bg-emerald text-white px-7 py-3 rounded-lg hover:bg-emerald/90 transition shadow-lg shadow-emerald/20 uppercase tracking-widest text-xs font-bold">Ücretsiz Ön Görüşme</a>
+            <a href="https://wa.me/905XXXXXXXXX" class="bg-emerald text-white px-7 py-3 rounded-lg hover:bg-emerald/90 transition shadow-lg shadow-emerald/20 uppercase tracking-widest text-xs font-bold">
+                Ücretsiz Ön Görüşme
+            </a>
         </div>
     </nav>
 
     <header class="hero-gradient text-white text-center px-8 relative overflow-hidden" style="padding-top: 35px; padding-bottom: 35px;">
         <div class="max-w-4xl mx-auto relative z-10 text-center">
             <h1 class="text-xl md:text-3xl font-extrabold mb-1 tracking-tighter uppercase italic">Akademik Rehber</h1>
-            <p class="text-[10px] md:text-xs text-slate-300 font-light max-w-2xl mx-auto italic uppercase tracking-widest">Bilgi paylaştıkça çoğalır. Akademik kariyeriniz için güncel içerikler.</p>
+            <p class="text-[10px] md:text-xs text-slate-300 font-light max-w-2xl mx-auto italic uppercase tracking-widest">Bilgi paylaştıkça çoğalır. Başarıya giden yolda bilimsel ipuçları.</p>
         </div>
-        <div class="absolute inset-0 flex items-center justify-center opacity-[0.02] pointer-events-none text-center"><span class="text-7xl font-black uppercase tracking-[0.5em]">SOKRAT</span></div>
+        <div class="absolute inset-0 flex items-center justify-center opacity-[0.02] pointer-events-none">
+            <span class="text-7xl font-black uppercase tracking-[0.5em]">SOKRAT</span>
+        </div>
     </header>
 
     <section class="py-20 px-8 bg-slate-50/50">
@@ -53,31 +58,29 @@
                     <a href="#" class="text-emerald font-bold text-xs hover:underline uppercase tracking-widest font-bold">Devamını Oku →</a>
                 </div>
             </article>
-
             <article class="blog-card rounded-[2.5rem]">
                 <div class="h-48 bg-slate-200 relative"><img src="https://images.unsplash.com/photo-1551288049-bbbda536ad0a?auto=format&fit=crop&w=800&q=80" alt="SPSS Analiz" class="w-full h-full object-cover"></div>
                 <div class="p-8">
                     <span class="text-[10px] font-black text-emerald uppercase bg-emerald/10 px-3 py-1 rounded-full font-bold">İstatistik</span>
                     <h3 class="text-xl font-bold text-navy-dark mt-4 mb-3 font-bold">SPSS Analiz Rehberi</h3>
-                    <p class="text-xs text-slate-500 italic mb-6 leading-relaxed">Veri analiz süreçlerinde en sık yapılan hatalar ve raporlama.</p>
+                    <p class="text-xs text-slate-500 italic mb-6 leading-relaxed">Veri analiz süreçlerinde en sık yapılan hatalar ve sonuçlar.</p>
                     <a href="#" class="text-emerald font-bold text-xs hover:underline uppercase tracking-widest font-bold">Devamını Oku →</a>
                 </div>
             </article>
-
             <article class="blog-card rounded-[2.5rem]">
                 <div class="h-48 bg-slate-200 relative"><img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=800&q=80" alt="Etik Kurul" class="w-full h-full object-cover"></div>
                 <div class="p-8">
                     <span class="text-[10px] font-black text-emerald uppercase bg-emerald/10 px-3 py-1 rounded-full font-bold">Etik</span>
                     <h3 class="text-xl font-bold text-navy-dark mt-4 mb-3 font-bold">Etik Kurul Süreci</h3>
-                    <p class="text-xs text-slate-500 italic mb-6 leading-relaxed">Etik onay alırken nelere dikkat edilmeli? Adım adım süreçler.</p>
+                    <p class="text-xs text-slate-500 italic mb-6 leading-relaxed">İnsan denekli araştırmalarda etik onay alma süreci.</p>
                     <a href="#" class="text-emerald font-bold text-xs hover:underline uppercase tracking-widest font-bold">Devamını Oku →</a>
                 </div>
             </article>
         </div>
     </section>
 
-    <footer class="bg-navy-dark text-white pt-20 pb-10 px-8 border-t-4 border-emerald text-center md:text-left">
-        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-16 text-center md:text-left">
+    <footer class="bg-navy-dark text-white pt-3 pb-2 px-8 border-t-4 border-emerald text-center md:text-left">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-2">
             <div class="lg:col-span-1">
                 <div class="text-xl font-extrabold tracking-tighter mb-6 uppercase italic font-bold">SOKRAT <span class="text-emerald font-light">DANIŞMANLIK</span></div>
                 <p class="text-slate-400 text-[11px] leading-relaxed font-light font-bold">Profesyonel akademik rehberlik çözümleri.</p>
@@ -85,30 +88,38 @@
             <div>
                 <h4 class="text-[11px] font-black uppercase tracking-[0.2em] mb-8 text-slate-200 font-bold">Linkler</h4>
                 <ul class="space-y-4 text-[11px] font-medium text-slate-400 uppercase tracking-tighter font-bold">
-                    <li><a href="index.html">Anasayfa</a></li>
-                    <li><a href="hizmetler.html">Hizmetlerimiz</a></li>
-                    <li><a href="blog.html">Akademik Rehber</a></li>
-                    <li><a href="iletisim.html">İletişim</a></li>
+                    <li><a href="index.html" class="hover:text-emerald transition">Anasayfa</a></li>
+                    <li><a href="hizmetler.html" class="hover:text-emerald transition">Hizmetlerimiz</a></li>
+                    <li><a href="blog.html" class="hover:text-emerald transition">Akademik Rehber</a></li>
+                    <li><a href="iletisim.html" class="hover:text-emerald transition">İletişim</a></li>
                 </ul>
             </div>
             <div>
                 <h4 class="text-[11px] font-black uppercase tracking-[0.2em] mb-8 text-slate-200 font-bold">Hizmetler</h4>
-                <ul class="space-y-4 text-[11px] font-medium text-slate-400 uppercase tracking-tighter font-bold font-bold">
+                <ul class="space-y-4 text-[11px] font-medium text-slate-400 uppercase tracking-tighter font-bold">
                     <li>Tez Danışmanlığı</li>
                     <li>Veri Analizi (SPSS)</li>
                     <li>Makale Editörlüğü</li>
                 </ul>
             </div>
             <div>
+                <h4 class="text-[11px] font-black uppercase tracking-[0.2em] mb-8 text-slate-200 font-bold">Son Rehberler</h4>
+                <ul class="space-y-4 text-[11px] font-medium text-slate-400 uppercase tracking-tighter font-bold font-bold">
+                    <li><a href="blog.html" class="hover:text-emerald transition font-bold">Tez Yazım İpuçları</a></li>
+                    <li><a href="blog.html" class="hover:text-emerald transition font-bold">SPSS Analiz Rehberi</a></li>
+                    <li><a href="blog.html" class="hover:text-emerald transition font-bold">Etik Kurul Süreci</a></li>
+                </ul>
+            </div>
+            <div>
                 <h4 class="text-[11px] font-black uppercase tracking-[0.2em] mb-8 text-slate-200 font-bold">İletişim</h4>
-                <ul class="space-y-5 text-[11px] font-medium text-slate-400 font-bold uppercase">
-                    <li>📞 +90 5XX XXX XX XX</li>
-                    <li>✉️ info@sokratdanismanlik.com</li>
-                    <li class="leading-relaxed text-[10px]">📍 İstanbul - Afyon / Türkiye</li>
+                <ul class="space-y-5 text-[11px] font-bold text-slate-400 uppercase">
+                    <li class="flex items-center gap-3 justify-center md:justify-start font-bold"><span class="text-emerald">📞</span><span>+90 5XX XXX XX XX</span></li>
+                    <li class="flex items-center gap-3 justify-center md:justify-start uppercase font-bold"><span class="text-emerald">✉️</span><span>INFO@SOKRATDANISMANLIK.COM</span></li>
+                    <li class="flex items-start gap-3 justify-center md:justify-start uppercase font-bold"><span class="text-emerald">📍</span><span class="leading-relaxed text-[10px]">İSTANBUL - AFYON / TÜRKİYE</span></li>
                 </ul>
             </div>
         </div>
-        <div class="max-w-7xl mx-auto pt-8 border-t border-slate-800/50 flex flex-col md:flex-row justify-between items-center gap-4 text-center text-[10px] font-bold text-slate-500 uppercase">
+        <div class="max-w-7xl mx-auto pt-2 border-t border-slate-800/50 flex flex-col md:flex-row justify-between items-center gap-4 text-[10px] font-bold text-slate-500 uppercase tracking-widest">
             <div>© Sokrat Akademik Danışmanlık</div>
             <div>Copyright 2026 © Designed by <span class="text-slate-300 font-bold">Serdar ŞEKER</span></div>
         </div>
