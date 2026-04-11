@@ -10,6 +10,7 @@
         body { font-family: 'Outfit', sans-serif; background-color: #ffffff; color: #1e293b; }
         .bg-navy-dark { background-color: #0f172a; }
         .text-emerald { color: #059669; }
+        .bg-emerald { background-color: #059669; }
         .hero-gradient { background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); }
         .nav-link { position: relative; }
         .nav-link::after { content: ''; position: absolute; width: 0; height: 2px; bottom: -4px; left: 0; background-color: #059669; transition: width 0.3s; }
@@ -19,11 +20,12 @@
     </style>
 </head>
 <body class="antialiased overflow-x-hidden">
+
     <nav class="border-b border-gray-100 py-2 px-8 flex justify-between items-center sticky top-0 bg-white z-50">
         <a href="index.html" class="hover:opacity-80 transition block">
             <img src="image_15.png" alt="Sokrat Danışmanlık Logo" class="h-24 w-auto object-contain">
         </a>
-        <div class="hidden md:flex items-center space-x-10 text-sm font-semibold text-slate-600 uppercase tracking-widest">
+        <div class="hidden md:flex items-center space-x-10 text-sm font-semibold text-slate-600 uppercase tracking-widest text-center">
             <a href="index.html" class="nav-link hover:text-emerald transition font-bold">Ana Sayfa</a>
             <a href="hizmetler.html" class="text-emerald border-b-2 border-emerald pb-1 transition font-bold">Hizmetlerimiz</a>
             <a href="blog.html" class="nav-link hover:text-emerald transition font-bold">Akademik Rehber</a>
@@ -37,24 +39,26 @@
             <h1 class="text-xl md:text-3xl font-extrabold mb-1 tracking-tighter uppercase italic">Hizmet Kapsamımız</h1>
             <p class="text-[10px] md:text-xs text-slate-300 font-light max-w-2xl mx-auto italic uppercase tracking-widest">Profesyonel rehberlik ve bilimsel analiz süreçlerimizin detayları.</p>
         </div>
-        <div class="absolute inset-0 flex items-center justify-center opacity-[0.02] pointer-events-none text-center"><span class="text-7xl font-black uppercase tracking-[0.5em]">SOKRAT</span></div>
+        <div class="absolute inset-0 flex items-center justify-center opacity-[0.02] pointer-events-none text-center">
+            <span class="text-7xl font-black uppercase tracking-[0.5em]">SOKRAT</span>
+        </div>
     </header>
 
     <section class="py-16 px-8 bg-slate-50/50">
         <div class="max-w-7xl mx-auto grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div class="service-card p-10 rounded-3xl text-center md:text-left"><div class="text-3xl mb-4">🎓</div><h4 class="font-extrabold text-navy-dark mb-2 uppercase text-sm">Akademik Hizmetler</h4><p class="text-[11px] text-slate-500 italic">Yönetim desteği.</p></div>
-            <div class="service-card p-10 rounded-3xl text-center md:text-left"><div class="text-3xl mb-4">👍</div><h4 class="font-extrabold text-navy-dark mb-2 uppercase text-sm">Konu Seçimi</h4><p class="text-[11px] text-slate-500 italic">Doğru konu tespiti.</p></div>
-            <div class="service-card p-10 rounded-3xl text-center md:text-left"><div class="text-3xl mb-4">📖</div><h4 class="font-extrabold text-navy-dark mb-2 uppercase text-sm">Makale Yazımı</h4><p class="text-[11px] text-slate-500 italic">Bilimsel editörlük.</p></div>
-            <div class="service-card p-10 rounded-3xl text-center md:text-left"><div class="text-3xl mb-4">🩺</div><h4 class="font-extrabold text-navy-dark mb-2 uppercase text-sm">Tıpta Uzmanlık</h4><p class="text-[11px] text-slate-500 italic">Tıbbi tez danışmanlığı.</p></div>
-            <div class="service-card p-10 rounded-3xl text-center md:text-left"><div class="text-3xl mb-4">🖋️</div><h4 class="font-extrabold text-navy-dark mb-2 uppercase text-sm">Tez Danışmanlığı</h4><p class="text-[11px] text-slate-500 italic">Lisans, YL ve Doktora rehberlik.</p></div>
-            <div class="service-card p-10 rounded-3xl text-center md:text-left"><div class="text-3xl mb-4">💼</div><h4 class="font-extrabold text-navy-dark mb-2 uppercase text-sm">Kurumsal Hizmet</h4><p class="text-[11px] text-slate-500 italic">Stratejik akademik çözümler.</p></div>
-            <div class="service-card p-10 rounded-3xl text-center md:text-left"><div class="text-3xl mb-4">📊</div><h4 class="font-extrabold text-navy-dark mb-2 uppercase text-sm">Analiz Araştırma</h4><p class="text-[11px] text-slate-500 italic">SPSS ve bilimsel analizler.</p></div>
-            <div class="service-card p-10 rounded-3xl text-center md:text-left"><div class="text-3xl mb-4">✏️</div><h4 class="font-extrabold text-navy-dark mb-2 uppercase text-sm">Dil Editörlük</h4><p class="text-[11px] text-slate-500 italic">Redaksiyon ve yazım kontrolü.</p></div>
+            <div class="service-card p-10 rounded-3xl text-center md:text-left"><div class="text-3xl mb-4">🎓</div><h4 class="font-extrabold text-navy-dark mb-2 uppercase text-sm">Akademik Hizmetler</h4><p class="text-[11px] text-slate-500 italic leading-relaxed">Sürecin profesyonel bir yapıya kavuşması ve yönetim desteği.</p></div>
+            <div class="service-card p-10 rounded-3xl text-center md:text-left"><div class="text-3xl mb-4">👍</div><h4 class="font-extrabold text-navy-dark mb-2 uppercase text-sm">Konu Seçimi</h4><p class="text-[11px] text-slate-500 italic leading-relaxed">Doğru araştırma sorusu ve kapsamlı akademik kaynak tespiti.</p></div>
+            <div class="service-card p-10 rounded-3xl text-center md:text-left"><div class="text-3xl mb-4">📖</div><h4 class="font-extrabold text-navy-dark mb-2 uppercase text-sm">Makale Yazımı</h4><p class="text-[11px] text-slate-500 italic leading-relaxed">Uluslararası standartlarda yazım desteği ve editörlük hizmeti.</p></div>
+            <div class="service-card p-10 rounded-3xl text-center md:text-left"><div class="text-3xl mb-4">🩺</div><h4 class="font-extrabold text-navy-dark mb-2 uppercase text-sm">Tıpta Uzmanlık</h4><p class="text-[11px] text-slate-500 italic leading-relaxed">Tıbbi tez süreçlerinde uzman danışmanlık ve analiz desteği.</p></div>
+            <div class="service-card p-10 rounded-3xl text-center md:text-left"><div class="text-3xl mb-4">🖋️</div><h4 class="font-extrabold text-navy-dark mb-2 uppercase text-sm">Tez Danışmanlığı</h4><p class="text-[11px] text-slate-500 italic leading-relaxed">Lisans, Yüksek Lisans ve Doktora seviyelerinde rehberlik.</p></div>
+            <div class="service-card p-10 rounded-3xl text-center md:text-left"><div class="text-3xl mb-4">💼</div><h4 class="font-extrabold text-navy-dark mb-2 uppercase text-sm">Kurumsal Hizmet</h4><p class="text-[11px] text-slate-500 italic leading-relaxed">Kurumsal projeler için özel akademik çözüm stratejileri.</p></div>
+            <div class="service-card p-10 rounded-3xl text-center md:text-left"><div class="text-3xl mb-4">📊</div><h4 class="font-extrabold text-navy-dark mb-2 uppercase text-sm">Analiz Araştırma</h4><p class="text-[11px] text-slate-500 italic leading-relaxed">Bilimsel veri toplama ve analiz süreç yönetimi.</p></div>
+            <div class="service-card p-10 rounded-3xl text-center md:text-left"><div class="text-3xl mb-4">✏️</div><h4 class="font-extrabold text-navy-dark mb-2 uppercase text-sm">Dil Editörlük</h4><p class="text-[11px] text-slate-500 italic leading-relaxed">Akademik redaksiyon ve yazım kuralı uygunluk kontrolü.</p></div>
         </div>
     </section>
 
-    <footer class="bg-navy-dark text-white pt-20 pb-10 px-8 border-t-4 border-emerald text-center md:text-left">
-        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-16">
+    <footer class="bg-navy-dark text-white pt-3 pb-2 px-8 border-t-4 border-emerald text-center md:text-left">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-2">
             <div class="lg:col-span-1">
                 <div class="text-xl font-extrabold tracking-tighter mb-6 uppercase italic font-bold">SOKRAT <span class="text-emerald font-light">DANIŞMANLIK</span></div>
                 <p class="text-slate-400 text-[11px] leading-relaxed font-light font-bold">Profesyonel akademik rehberlik çözümleri.</p>
@@ -62,24 +66,46 @@
             <div>
                 <h4 class="text-[11px] font-black uppercase tracking-[0.2em] mb-8 text-slate-200 font-bold">Linkler</h4>
                 <ul class="space-y-4 text-[11px] font-medium text-slate-400 uppercase tracking-tighter font-bold">
-                    <li><a href="index.html">Anasayfa</a></li>
-                    <li><a href="hizmetler.html">Hizmetlerimiz</a></li>
-                    <li><a href="blog.html">Akademik Rehber</a></li>
-                    <li><a href="iletisim.html">İletişim</a></li>
+                    <li><a href="index.html" class="hover:text-emerald transition">Anasayfa</a></li>
+                    <li><a href="hizmetler.html" class="hover:text-emerald transition">Hizmetlerimiz</a></li>
+                    <li><a href="blog.html" class="hover:text-emerald transition">Akademik Rehber</a></li>
+                    <li><a href="iletisim.html" class="hover:text-emerald transition">İletişim</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-[11px] font-black uppercase tracking-[0.2em] mb-8 text-slate-200 font-bold">Hizmetler</h4>
+                <ul class="space-y-4 text-[11px] font-medium text-slate-400 uppercase tracking-tighter font-bold">
+                    <li>Tez Danışmanlığı</li>
+                    <li>Veri Analizi (SPSS)</li>
+                    <li>Makale Editörlüğü</li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-[11px] font-black uppercase tracking-[0.2em] mb-8 text-slate-200 font-bold">Son Rehberler</h4>
+                <ul class="space-y-4 text-[11px] font-medium text-slate-400 uppercase tracking-tighter font-bold">
+                    <li><a href="blog.html" class="hover:text-emerald transition font-bold">Tez Yazım İpuçları</a></li>
+                    <li><a href="blog.html" class="hover:text-emerald transition font-bold">SPSS Analiz Rehberi</a></li>
+                    <li><a href="blog.html" class="hover:text-emerald transition font-bold">Etik Kurul Süreci</a></li>
                 </ul>
             </div>
             <div>
                 <h4 class="text-[11px] font-black uppercase tracking-[0.2em] mb-8 text-slate-200 font-bold">İletişim</h4>
-                <ul class="space-y-5 text-[11px] font-medium text-slate-400 font-bold uppercase">
-                    <li>📞 +90 5XX XXX XX XX</li>
-                    <li>✉️ info@sokratdanismanlik.com</li>
-                    <li class="leading-relaxed text-[10px]">📍 İstanbul - Afyon / Türkiye</li>
+                <ul class="space-y-5 text-[11px] font-bold text-slate-400 uppercase">
+                    <li class="flex items-center gap-3 justify-center md:justify-start font-bold">
+                        <span class="text-emerald">📞</span><span>+90 5XX XXX XX XX</span>
+                    </li>
+                    <li class="flex items-center gap-3 justify-center md:justify-start uppercase font-bold">
+                        <span class="text-emerald">✉️</span><span>INFO@SOKRATDANISMANLIK.COM</span>
+                    </li>
+                    <li class="flex items-start gap-3 justify-center md:justify-start uppercase font-bold">
+                        <span class="text-emerald">📍</span><span class="leading-relaxed text-[10px]">İSTANBUL - AFYON / TÜRKİYE</span>
+                    </li>
                 </ul>
             </div>
         </div>
-        <div class="max-w-7xl mx-auto pt-8 border-t border-slate-800/50 flex flex-col md:flex-row justify-between items-center gap-4 text-[10px] font-bold text-slate-500 uppercase">
+        <div class="max-w-7xl mx-auto pt-2 border-t border-slate-800/50 flex flex-col md:flex-row justify-between items-center gap-4 text-[10px] font-bold text-slate-500 uppercase tracking-widest">
             <div>© Sokrat Akademik Danışmanlık</div>
-            <div>Designed by <span class="text-slate-300 font-bold">Serdar ŞEKER</span></div>
+            <div>Copyright 2026 © Designed by <span class="text-slate-300 font-bold">Serdar ŞEKER</span></div>
         </div>
     </footer>
 </body>
